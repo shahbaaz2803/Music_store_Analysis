@@ -33,7 +33,7 @@ The System consists of 11 interconnected tables:
 - SQL-Based Data Analysis
 
 ## Entity Relationship Diagram
-![ER Diagram](images/ER Diagram.png)
+![ER Diagram](images/ER_Diagram.png)
 The ER diagram illustrates the relationships between the eleven core tables used in the Music Store database.
 
 ## SQL Analysis
