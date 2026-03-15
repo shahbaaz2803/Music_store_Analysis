@@ -133,6 +133,18 @@ INSERT INTO employee
 
 SELECT * FROM Employee;
 
+-- Using Load Data File For Faster Data importing and for Efficient Data loading
+SHOW VARIABLES LIKE 'secure_file_priv';
+
+LOAD DATA INFILE  'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/track.csv'
+INTO TABLE  track
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(track_id, name, album_id, media_type_id, genre_id, composer, milliseconds, bytes, unit_price);
+
+
 --  Checking Tables in DB
 SHOW TABLES;
 
